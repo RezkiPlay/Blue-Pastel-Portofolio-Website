@@ -28,6 +28,6 @@ portfolio-website/
 │   └── style.css
 ├── js/
 │   └── script.js
-├── images/
+├── assets/
 │   └── (semua aset gambar)
 └── README.md
