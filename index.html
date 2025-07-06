@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RezkiPlay</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">RezkiPlay</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hello, I'm <span style="color: var(--blue-muted);">RezkiPlay</span></h1>
+                    <p class="subtitle">Full Stack Developer & Creative Designer</p>
+                    <p>I create beautiful, functional websites and engaging digital experiences. From web development to 3D animation, I bring ideas to life through code and creativity.</p>
+                    <a href="#contact" class="cta-button">Get In Touch</a>
+                </div>
+                <div class="hero-image">
+                    <img class="logo-profile" src="assets/RezkiPlayPort.jpg" alt="Rezkiplay Profile" id="navProfilePhoto" />
+            RezkiPlay
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8</div>
+                        <p>Technologies</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm a passionate developer and designer who loves creating digital experiences that make a difference. My journey started with web development, but I've expanded into UI/UX design, game development, and 3D animation.</p>
+                    <p>I specialize in modern web technologies like React and Node.js, while also exploring creative fields like 2D/3D animation and content creation. My bilingual skills in English allow me to work with international clients and teams.</p>
+                    <p>When I'm not coding, you'll find me experimenting with new animation techniques, working on game development projects, or creating engaging content for various platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>🚀 Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🎨 Design & UX</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Adobe Creative Suite</span>
+                        <span class="skill-tag">Prototyping</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🎮 Game Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">Game Design</span>
+                        <span class="skill-tag">Beginner Level</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🎬 Animation & Content</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">2D Animation</span>
+                        <span class="skill-tag">3D Animation</span>
+                        <span class="skill-tag">Video Editing</span>
+                        <span class="skill-tag">Content Creation</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🌍 Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">English</span>
+                        <span class="skill-tag">Indonesian</span>
+                        <span class="skill-tag">Technical Writing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-tabs">
+                <button class="tab-button active" onclick="showProjects('web')">Web Development</button>
+                <button class="tab-button" onclick="showProjects('mobile')">Mobile Apps</button>
+                <button class="tab-button" onclick="showProjects('game')">Game Development</button>
+                <button class="tab-button" onclick="showProjects('design')">UI/UX Design</button>
+            </div>
+            
+            <div id="web-projects" class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">E-Commerce Platform Preview</div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with React frontend and Node.js backend. Features include user authentication, payment integration, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">Portfolio Website Preview</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Creative Portfolio</h3>
+                        <p>Modern portfolio website with smooth animations and responsive design. Built with vanilla JavaScript and CSS animations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">HTML5</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">Task Management App Preview</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p>Collaborative task management application with real-time updates, team collaboration features, and progress tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mobile-projects" class="project-grid hidden">
+                <div class="project-card">
+                    <div class="project-image">Weather App Preview</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Forecast App</h3>
+                        <p>React Native weather application with location-based forecasts, weather maps, and push notifications.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">API Integration</span>
+                            <span class="tech-tag">Geolocation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">App Store</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">Fitness Tracker Preview</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Fitness Tracker</h3>
+                        <p>Personal fitness tracking app with workout logging, progress charts, and social features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Charts</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="game-projects" class="project-grid hidden">
+                <div class="project-card">
+                    <div class="project-image">Puzzle Game Preview</div>
+                    <div class="project-content">
+                        <h3 class="project-title">2D Puzzle Adventure</h3>
+                        <p>Beginner-level 2D puzzle game created with Unity and C#. Features multiple levels, character progression, and save system.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">2D Graphics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Play Game</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">Racing Game Preview</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Simple Racing Game</h3>
+                        <p>Basic 3D racing game with simple controls and physics. Learning project focused on game mechanics and Unity basics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">3D Physics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Play Game</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="design-projects" class="project-grid hidden">
+                <div class="project-card">
+                    <div class="project-image">Mobile App Design Preview</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Banking App UI Design</h3>
+                        <p>Modern banking app interface design with user-friendly navigation, security features, and financial management tools.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">UI Design</span>
+                            <span class="tech-tag">Prototyping</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Design</a>
+                            <a href="#" class="project-link">Figma</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">Website Redesign Preview</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Restaurant Website Redesign</h3>
+                        <p>Complete redesign of restaurant website focusing on user experience, online ordering, and mobile responsiveness.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">UX Research</span>
+                            <span class="tech-tag">Wireframing</span>
+                            <span class="tech-tag">Visual Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Case Study</a>
+                            <a href="#" class="project-link">Figma</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Creative Gallery</h2>
+            <div class="gallery-tabs">
+                <button class="tab-button active" onclick="showGallery('2d')">2D Art</button>
+                <button class="tab-button" onclick="showGallery('3d')">3D Models</button>
+                <button class="tab-button" onclick="showGallery('animation')">Animations</button>
+                <button class="tab-button" onclick="showGallery('video')">Video Content</button>
+            </div>
+            
+            <div id="2d-gallery" class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image">Character Design #1</div>
+                    <div class="gallery-info">
+                        <h3>Fantasy Character Design</h3>
+                        <p>Original character design for indie game project</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">Illustration #1</div>
+                    <div class="gallery-info">
+                        <h3>Digital Illustration</h3>
+                        <p>Concept art for web application backgrounds</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">Logo Design #1</div>
+                    <div class="gallery-info">
+                        <h3>Brand Identity</h3>
+                        <p>Logo design for tech startup client</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="3d-gallery" class="gallery-grid hidden">
+                <div class="gallery-item">
+                    <div class="gallery-image">3D Model #1</div>
+                    <div class="gallery-info">
+                        <h3>Product Visualization</h3>
+                        <p>3D model for e-commerce product display</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">3D Scene #1</div>
+                    <div class="gallery-info">
+                        <h3>Environmental Design</h3>
+                        <p>3D scene for game development project</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">Architecture #1</div>
+                    <div class="gallery-info">
+                        <h3>Architectural Visualization</h3>
+                        <p>3D rendering of modern building design</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="animation-gallery" class="gallery-grid hidden">
+                <div class="gallery-item">
+                    <div class="gallery-image">2D Animation #1</div>
+                    <div class="gallery-info">
+                        <h3>Character Animation</h3>
+                        <p>2D character walk cycle animation</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">3D Animation #1</div>
+                    <div class="gallery-info">
+                        <h3>Product Demo</h3>
+                        <p>3D product demonstration animation</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">Motion Graphics #1</div>
+                    <div class="gallery-info">
+                        <h3>Motion Graphics</h3>
+                        <p>Animated logo and brand elements</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="video-gallery" class="gallery-grid hidden">
+                <div class="gallery-item">
+                    <div class="gallery-image">Tutorial Video #1</div>
+                    <div class="gallery-info">
+                        <h3>Web Development Tutorial</h3>
+                        <p>Educational content for React beginners</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">Promo Video #1</div>
+                    <div class="gallery-info">
+                        <h3>Product Promotional Video</h3>
+                        <p>Marketing video for mobile app launch</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">Content Creation #1</div>
+                    <div class="gallery-info">
+                        <h3>Social Media Content</h3>
+                        <p>Engaging video content for social platforms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h3>Sosial Media</h3>
+    <div class="social-media-list">
+      <!-- item-item -->
+      <a href="https://www.tiktok.com/@rezkiplayhere" class="social-media-item" target="_blank">
+        <div class="social-media-icon">🎵</div>
+        <div class="social-media-info">
+          <h4>TikTok</h4>
+          <p>@rezkiplayhere</p>
+        </div>
+      </a>
+                        
+                        <a href="https://www.youtube.com/@rezkiplayhere" class="social-media-item" target="_blank">
+                            <div class="social-media-icon">📹</div>
+                            <div class="social-media-info">
+                                <h4>YouTube</h4>
+                                <p>@rezkiplay</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/rezkiplay" class="social-media-item" target="_blank">
+                            <div class="social-media-icon">📸</div>
+                            <div class="social-media-info">
+                                <h4>Instagram</h4>
+                                <p>@rezkiplay</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://steamcommunity.com/id/rezkiplay" class="social-media-item" target="_blank">
+                            <div class="social-media-icon">🎮</div>
+                            <div class="social-media-info">
+                                <h4>Steam</h4>
+                                <p>rezkiplay</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://open.spotify.com/user/w30az0p5aucy7qflnkggtvn5e" class="social-media-item" target="_blank">
+                            <div class="social-media-icon">🎧</div>
+                            <div class="social-media-info">
+                                <h4>Spotify</h4>
+                                <p>rezkiplay</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/rezkiplay" class="social-media-item" target="_blank">
+                            <div class="social-media-icon">👨‍💻</div>
+                            <div class="social-media-info">
+                                <h4>GitHub</h4>
+                                <p>rezkiplay</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Behance</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">YouTube</a>
+            </div>
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <style>
+        /* Additional mobile menu styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--blue-soft);
+                flex-direction: column;
+                padding: 1rem;
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: all 0.3s ease;
+                pointer-events: none;
+            }
+            
+            .nav-links.show {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: auto;
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 0.5rem 0;
+            }
+        }
+
+        /* Loading animation */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gray-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--blue-soft);
+            border-top: 3px solid var(--blue-muted);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Scroll to top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--blue-muted);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .scroll-to-top.show {
+            opacity: 1;
+        }
+
+        .scroll-to-top:hover {
+            background: var(--slate-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Additional animations */
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Hover effects for links */
+        .project-link, .social-links a {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-link::before, .social-links a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: currentColor;
+            transition: width 0.3s ease;
+        }
+
+        .project-link:hover::before, .social-links a:hover::before {
+            width: 100%;
+        }
+    </style>
